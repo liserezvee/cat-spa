@@ -1,12 +1,37 @@
-# React + Vite
+# 🐱 Cat Facts React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application that displays a list of cat facts with images. Each item can be clicked to view a detail screen. Facts are fetched from the public [`https://catfact.ninja`](https://catfact.ninja/facts) API, and each item is visually enhanced with a random cat image.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🔄 Fetches 30 cat facts from the `/facts` endpoint of [catfact.ninja](https://catfact.ninja/facts)
+- 🐱 Each item displays:
+  - A **square cat image** from [placekittens.com](https://loremflickr.com/300/200/kitten)
+  - A **single-line title** with ellipsi
+  - The **fact length**
+- 🔎 **Details page** for each item shows:
+  - A full-size image
+  - The full fact (no truncation)
+- 📄 **Pagination**: Displays 5 items per page (handled manually since API pagination is optional)
+- ✅ Fully responsive and styled with Tailwind CSS 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📦 Technologies Used
+
+- React (with hooks)
+- React Router (`react-router-dom`)
+- Axios (for API requests)
+- Tailwind CSS (optional, depending on your setup)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/cat-facts-app.git
+cd cat-facts-app
